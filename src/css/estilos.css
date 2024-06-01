@@ -1,0 +1,125 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 61%, 68%);
+    --dark-soft-magenta: hsl(300, 55%, 66%);;
+    --extra-dark-magenta: hsl(300, 40%, 58%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url(../images/bg-desktop.svg);
+    background-color: var(--violet);
+
+    padding: 1rem 9rem;
+}
+
+header {
+    padding: 2rem;
+}
+
+main {
+    display: flex;
+    flex: 0 0 60%;
+    min-width: fit-content;
+    padding: 2rem 2rem;
+}
+
+main .mockup__container {
+    flex: 1;
+}
+
+main .register {
+    flex: 0 0 42%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    color: #fff;
+}
+
+.register > div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 2rem;
+}
+
+.register > div > h1 {
+    font-size: 4.3rem;
+    line-height: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.register button {
+    width: 20rem;
+    height: 6rem;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.63   );
+    color: var(--violet);
+}
+
+.register button:hover {
+    cursor: pointer;
+    background: var(--soft-magenta);
+    color: azure;
+    transition: ease-in-out .25s;
+
+}
+
+.register button:active {
+    background-color: var(--extra-dark-magenta);
+    color: #fff;
+}
+
+
+footer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+}
+
+footer > div {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+
+    border-radius: 100%;
+    border: 1.5px solid #fff;
+}
+
+.logo:hover {
+    cursor: pointer;
+    border: none;
+}
+
+.facebook:hover {
+    background-color: #1778F2;
+}
+.twitter:hover {
+    background: #1DA1F2;
+}
+ .instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
